@@ -22,7 +22,6 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \usepackage{fontawesome5} % For social media icons
-\usepackage{boldline}
 
 % Bibliography
 \usepackage[style=authoryear]{biblatex}
@@ -51,65 +50,79 @@
 \setbeamertemplate{footline}{}
 \setbeamertemplate{bibliography item}{}
 
-% Title Page
-\title{\textbf{The Strategic Balance Between Positional and Valence Issues in Party Competition}}
-
-
-\author{
-    \textbf{Stefano Sangiovanni}\\[0.2cm]
-    \small Supervisors: Andrea Ceron\textsuperscript{1}, Giovanna M. Invernizzi\textsuperscript{2}
-}
-
-\institute{
-    \footnotesize
-    \textsuperscript{1} University of Milan \\
-    \textsuperscript{2} Bocconi University
-}
-
-\date{\small NASP-POLS PhD Project Colloquium \\ April 22, 2025}
+% Custom Footer
+\setbeamertemplate{footline}{
+    \leavevmode%
+    \hbox{%
+      \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+        \usebeamerfont{author in head/foot}\shortauthor
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+        \usebeamerfont{title in head/foot}\shorttitle
+      \end{beamercolorbox}}%
+    \vskip0pt
+  }
+ 
+ % Remove navigation symbols
+ \setbeamertemplate{navigation symbols}{}
 
 % Short Title and Author for Footer
 \newcommand{\shorttitle}{PhD Project Colloquium}
 \newcommand{\shortauthor}{Stefano Sangiovanni}
 
-% Remove navigation symbols
-\setbeamertemplate{navigation symbols}{}
+%% Title Page
+\title{\textbf{The Strategic Balance Between Positional and Valence Issues in Party Competition}}
 
-% Custom Footer
- \setbeamertemplate{footline}{
-   \leavevmode%
-   \hbox{%
-     \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-       \usebeamerfont{author in head/foot}\shortauthor
-     \end{beamercolorbox}%
-     \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-       \usebeamerfont{title in head/foot}\shorttitle
-     \end{beamercolorbox}}%
-   \vskip0pt
- }
+\author{
+    \large\textbf{Stefano Sangiovanni} \\[0.3cm]
+     Supervisors: Andrea Ceron\textsuperscript{1}, Giovanna M. Invernizzi\textsuperscript{2}
+}
 
-%Si magari metti anche lo stato di avanzamento degli altri paper (es. per parliamentary speeches, dì che stai iniziando a fare questo su questi dati e con questo metodo; per quello su campaign dataset, magari puoi accennare al data frame: periodo paesi; e ai risultati preliminari legati a ipotesi teoriche, es. come ipotizziamo osserviamo che X ha effetto su Y ma solo se Z etc.). Se devi tagliare qualcosa nella presentazione taglia le cose più ovvie, un po' come ha detto Giovanna nel commento alle slide su Mannheim (es. non tutti al project colloquium conoscono la letteratura su valence, ma comunque non devi spenderci troppo tempo, cerca di consensare quelle cose in 1 slide). Chiaramente dipende da quanto tempo avrai a disposizione.
+\institute{
+    \footnotesize
+    \textsuperscript{1} Department of Social and Political Sciences, University of Milan \\
+    \textsuperscript{2} Department of Social and Political Sciences, Bocconi University
+}
 
-%%% Begin slides :) I will have 10 minutes 
+\date{\footnotesize NASP-POLS PhD Project Colloquium \\ April 22, 2025}
 
 \begin{document}
+
 \begin{frame}[plain]
-    \centering
     \titlepage
 \end{frame}
+
 
 \begin{frame} %Trump in 2016
     \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{images/Trump1.png}
-        \label{fig:enter-label}
+        \label{fig:trump1}
     \end{figure}
         \begin{figure}
         \centering
         \includegraphics[width=0.7\linewidth]{images/Trump2.jpg}
-        \label{fig:enter-label}
+        \label{fig:trump2}
     \end{figure}
 \end{frame}
+
+%Si magari metti anche lo stato di avanzamento degli altri paper (es. per parliamentary speeches, dì che stai iniziando a fare questo su questi dati e con questo metodo; per quello su campaign dataset, magari puoi accennare al data frame: periodo paesi; e ai risultati preliminari legati a ipotesi teoriche, 
+%es. come ipotizziamo osserviamo che X ha effetto su Y ma solo se Z etc.). Se devi tagliare qualcosa nella presentazione taglia le cose più ovvie, un po' come ha detto Giovanna nel commento alle slide su Mannheim (es. non tutti al project colloquium conoscono la letteratura su valence, ma comunque non devi spenderci troppo tempo, cerca di consensare quelle cose in 1 slide). Chiaramente dipende da quanto tempo avrai a disposizione.
+
+\begin{frame}
+    % Introduction about my phd project
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item 3 interconnected papers 
+        \item Electoral campaign and Valence
+        \item 
+        \item 2 Experiments on Political Scandals
+    \end{itemize}
+\end{frame}
+
+%The second paper examines the effect of positive economic indicators on valence emphasis, investigating how governing parties leverage favorable economic performance to enhance their competence and leadership image, while opposition parties may shift focus to positional economic issues, such as inequality and redistribution.
 
 \begin{frame}{Political Scandals and Valence Theory}
     \begin{itemize}
@@ -121,16 +134,20 @@
 \end{frame}
 
 
-\begin{frame}{Valence Theory and Political Scandals}
-    \begin{itemize}
-    %its quite established in the literature that
-    \item \textbf{Valence issues} are key factors influencing voter behaviour alongside traditional left-right distinctions and policy positions \customcite{groseclose2001model, jacoby2009public, clark2009valence} \vspace{0.3cm}
-    \item Valence dimensions refer to “character-based values” like honesty, competence, charisma, likability and unity \customcites{clark2009valence, adams2001theory} \vspace{0.3cm}
-    \item Political scandals, exposing misconduct or corruption, shape perceptions of candidate integrity and competence \customcites{doherty2014does, Rottinghaus_2023} \vspace{0.3cm}
-    \item If scandals are perceived as \textbf{negative valence information}, then voters should negatively evaluate involved politicians \customcites{doherty2014does, Rottinghaus_2023} \vspace{0.3cm}
-    \item Voters should appreciate politicians who are not involved in any scandals and should judge those that are involved
-    \end{itemize}
-\end{frame}
+% \begin{frame}{Valence Theory and Political Scandals}
+%     \begin{itemize}
+%     %its quite established in the literature that
+%     \item \textbf{Valence issues} are key factors influencing voter behaviour alongside traditional left-right distinctions and policy positions \customcite{groseclose2001model, jacoby2009public, clark2009valence} \vspace{0.3cm}
+%     \item Valence dimensions refer to “character-based values” like honesty, competence, charisma, likability and unity \customcites{clark2009valence, adams2001theory} \vspace{0.3cm}
+%     \item Political scandals, exposing misconduct or corruption, shape perceptions of candidate integrity and competence \customcites{doherty2014does, Rottinghaus_2023} \vspace{0.3cm}
+%     \item If scandals are perceived as \textbf{negative valence information}, then voters should negatively evaluate involved politicians \customcites{doherty2014does, Rottinghaus_2023} \vspace{0.3cm}
+%     \item Voters should appreciate politicians who are not involved in any scandals and should judge those that are involved
+%     \end{itemize}
+% \end{frame}
+
+
+
+%%% PAPER TRE EXPERIMENTS
 
 \begin{frame}{Political Scandals: A Definition}
     \begin{itemize}
@@ -143,31 +160,23 @@
         \item Some studies find that scandals have negative political consequences even in polarized contexts \customcites{darr2019collision, wolsky2022scandal}, while others suggest minimal impact on politicians' careers and electoral behavior \customcites{funck2021partisanship, Lee_2023}
     \end{itemize}
 \end{frame}
- Lee_2023
-        \item Scandals often expose negative portrayals affecting politicians' integrity and trust with constituents\vspace{0.3cm}
-        \item Different types of scandals may elicit varied reactions and meanings among voters\vspace{0.3cm}
+%  Lee_2023
+%         \item Scandals often expose negative portrayals affecting politicians' integrity and trust with constituents\vspace{0.3cm}
+%         \item Different types of scandals may elicit varied reactions and meanings among voters\vspace{0.3cm}
 
-\begin{frame}{Literature Gaps in Political Scandal Research}
-    \begin{itemize}
-        \item Limited focus on types of scandals beyond corruption, reducing generalizability \customcite{kumlin2012scandal} \vspace{0.3cm}
-        \item Insufficient research on voters' reactions to different types of scandals \vspace{0.3cm}
-        \item Lack of systematic comparisons across various contexts (moral values are country dependent), scandal types and valence informations \customcite{kumlin2012scandal} \vspace{0.3cm}
-        \item Effects of different scandal types on electoral behavior in polarized contexts remain poorly understood \customcites{puglisi2011, darr2019collision, Rottinghaus_2023} \vspace{0.3cm} 
-    \end{itemize}
-\end{frame}
+% \begin{frame}{Literature Gaps in Political Scandal Research}
+%     \begin{itemize}
+%         \item Limited focus on types of scandals beyond corruption, reducing generalizability \customcite{kumlin2012scandal} \vspace{0.3cm}
+%         \item Insufficient research on voters' reactions to different types of scandals \vspace{0.3cm}
+%         \item Lack of systematic comparisons across various contexts (moral values are country dependent), scandal types and valence informations \customcite{kumlin2012scandal} \vspace{0.3cm}
+%         \item Effects of different scandal types on electoral behavior in polarized contexts remain poorly understood \customcites{puglisi2011, darr2019collision, Rottinghaus_2023} \vspace{0.3cm} 
+%     \end{itemize}
+% \end{frame}
 
-how voters process valence-related information
+% how voters process valence-related information
 
-when individuals and politicians share similar values, particularly co-partisanship or ideological alignment, the consequences and the magnitude of scandals may differ. Could a high level of partisanship and ideological polarization diminish the effects of a political scandal? If so, do all types of scandals have the same consequences? 
+% when individuals and politicians share similar values, particularly co-partisanship or ideological alignment, the consequences and the magnitude of scandals may differ. Could a high level of partisanship and ideological polarization diminish the effects of a political scandal? If so, do all types of scandals have the same consequences? 
 
-\begin{frame}{boh}
-    \begin{itemize}
-        \item Effects of scandals may vary across supporters of different political parties \vspace{0.3cm}
-        \item Partisan allegiance might mitigate scandal impacts
-        \item Financial scandals may affect voters differently compared to personal or ethical misconduct
-        \item Shared ideological positions between politicians and voters could influence scandal relevance
-    \end{itemize}
-\end{frame}
 
 %%%%%% Research Questions
 
@@ -232,11 +241,11 @@ when individuals and politicians share similar values, particularly co-partisans
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|}
 \hline
-\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\ \hlineB{3pt} 
-\textbf{Political Scandal} &  \begin{tabular}[c]{@{}c@{}}No scandal \\[2pt] Investigated for unwanted sexual conduct towards staff members \\[2pt] Falsification of credentials on curriculum vitae \\[2pt] Investigated for corruption \\[2pt] Participated in a violent anti-government protest while underage
+\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\  
+\textbf{Political Scandal} &  \begin{tabular}[c]{@{}c@{}}No scandal \\[2.0pt] Investigated for unwanted sexual conduct towards staff members \\[2.0pt] Falsification of credentials on curriculum vitae \\[2pt] Investigated for corruption \\[2pt] Participated in a violent anti-government protest while underage
 
  \end{tabular} \\ \hline
-\textbf{Positive Valence} &  \begin{tabular}[c]{@{}c@{}}No positive valence \\[2pt] Had 95\% of campaign statements certified as accurate by an independent fact checker \\[2pt] Led public-private partnership preventing layoffs during local economic downturn \\[2pt] Successfully rallied party support for innovative policy agenda, turning initial 30\% backing into 90\% consensus \\[2pt] Voted with party positions on 93\% of legislative votes
+\textbf{Positive Valence} &  \begin{tabular}[c]{@{}c@{}}No positive valence \\[2.0pt] Had 95\% of campaign statements certified as accurate by an independent fact checker \\[2pt] Led public-private partnership preventing layoffs during local economic downturn \\[2pt] Successfully rallied party support for innovative policy agenda, turning initial 30\% backing into 90\% consensus \\[2pt] Voted with party positions on 93\% of legislative votes
  \end{tabular} \\ \hline
 \end{tabular}%
 }
@@ -353,6 +362,52 @@ Financial support for low-income families (Left-wing)
 \textbf{Senator Jane Smith:} Senator Williamson talks about job creation, but how can anyone take his words seriously when he’s been investigated for \textbf{unwanted sexual conduct} towards staff members? This isn’t just a matter of policy—it’s about trust, integrity, and accountability.
 \end{frame}
 
+%%% PAPER 1
+\begin{frame}{Policy Shifts and Strategic Valence Emphasis in Electoral Competition}
+    
+\end{frame}
+
+
+%%% PAPER 2
+\begin{frame}{Economic Performance Indicators and Strategic Valence Choices}
+    \textbf{Theoretical Expectations and Mechanisms}
+    \begin{itemize}
+        \item Governing parties emphasize \textbf{valence traits} (e.g., competence, effective governance) when economic indicators like GDP growth and low unemployment are favorable
+        \item Opposition parties highlight \textbf{positional issues} (e.g., inequality, redistribution) to challenge the governing party's competence and focus on unequal economic benefits
+        \item governing parties use favorable economic indicators to
+        underscore valence traits that reinforce public confidence and perceived competence. Conversely, without
+        the ability to claim credit for economic gains, opposition parties may emphasize positional issues, such
+        as inequality or social justice.
+    \end{itemize}
+    
+    \vspace{0.3cm}
+    \textbf{Research Questions}
+    \begin{enumerate}
+        \item \textbf{RQ1:} How do governing parties adjust their emphasis on valence traits in response to positive economic indicators?
+        \item \textbf{RQ2:} How do opposition parties adjust their communication strategies around economic issues in response to positive economic indicators?
+    \end{enumerate}
+    \end{frame}
+
+    \begin{frame}{Research Design: Data and Methodology}
+        \begin{itemize}
+            \item \textbf{Data:} 
+            \begin{itemize}
+                \item Parliamentary debates (e.g., ParlaMint)
+                \item Economic performance indicators (e.g., GDP growth, unemployment rates)
+            \end{itemize}
+            \vspace{0.3cm}
+            \item \textbf{Methodology:}
+            \begin{itemize}
+                \item Use a \textbf{Natural Language Inference (NLI)} approach to classify speeches into \textbf{economic valence traits} and \textbf{positional issues}
+                \item Focus on traits such as competence in managing the economy, effective governance, and leadership during economic crises
+                \item NLI Classifier: Political DEBATE \customcite{burnham2024political}, maybe fine-tune it!
+                \item Analyze how governing parties emphasize economic valence traits in response to positive economic indicators.
+                \item Examine how opposition parties shift focus to positional issues under similar conditions.
+            \end{itemize}
+        \end{itemize}
+        \end{frame}
+
+
 \begin{frame}{Conclusions and Next Steps}
 \textbf{Conjoint Experiment}
 \begin{itemize}
@@ -394,7 +449,7 @@ Financial support for low-income families (Left-wing)
     \begin{figure}
         \centering
         \includegraphics[width=0.6\linewidth]{images/pa_3task.png}
-        \label{fig:enter-label}
+        \label{fig:appendix1}
     \end{figure}
 \end{frame}
 
@@ -402,7 +457,7 @@ Financial support for low-income families (Left-wing)
     \begin{figure}
         \centering
         \includegraphics[width=0.6\linewidth]{images/pa_3task_0.4effect.png}
-        \label{fig:enter-label}
+        \label{fig:appendix2}
     \end{figure}    
 \end{frame}
 
@@ -435,7 +490,7 @@ Financial support for low-income families (Left-wing)
         \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{images/Prompt 1.png}
-        \label{fig:enter-label}
+        \label{fig:appendix_prompt1}
     \end{figure}  
 \end{frame}
 
@@ -443,7 +498,7 @@ Financial support for low-income families (Left-wing)
         \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{images/prompt 2.png}
-        \label{fig:enter-label}
+        \label{fig:appendix_prompt2}
     \end{figure}  
 \end{frame}
 
@@ -453,16 +508,16 @@ Financial support for low-income families (Left-wing)
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c||c|}
 \hline
-\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\ \hlineB{2pt} 
+\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\  
 \textbf{Gender}                     & \begin{tabular}[c]{@{}c@{}}Male \\[2pt] Female\end{tabular}                                                              \\ \hline
 \textbf{Party Affiliation}          & \begin{tabular}[c]{@{}c@{}}Right-Wing \\[2pt] Left-Wing\end{tabular}                                      \\ \hline
-\textbf{Incumbency Status}          & \begin{tabular}[c]{@{}c@{}}Incumbent \\[2pt] Opposition\end{tabular}                                      \\ \hlineB{2pt}  
+\textbf{Incumbency Status}          & \begin{tabular}[c]{@{}c@{}}Incumbent \\[2pt] Opposition\end{tabular}                                      \\   
 \textbf{Position on Immigration}    & \begin{tabular}[c]{@{}c@{}}Implement strict border controls and reduce immigration \\[2pt]
 Promote inclusive immigration policies and increase quotas for asylum seekers
 \end{tabular}       \\ \hline
 \textbf{Position on Economic Policies} & \begin{tabular}[c]{@{}c@{}}Advocates for tax reductions, market deregulation and business-friendly policies \\[2pt]
 Supports stronger market regulations, higher corporate taxation and expanded welfare programs
-\end{tabular} \\ \hlineB{2pt}  
+\end{tabular} \\  
 \textbf{Political Scandal} &  \begin{tabular}[c]{@{}c@{}}No scandal \\[2pt] Investigated for unwanted sexual conduct towards staff members \\[2pt] Falsification of credentials on curriculum vitae \\[2pt] Investigated for corruption \\[2pt] Participated in a violent anti-government protest while underage
 
  \end{tabular} \\ \hline
@@ -480,7 +535,7 @@ Supports stronger market regulations, higher corporate taxation and expanded wel
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c||c|}
 \hline
-\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\ \hlineB{2pt} 
+\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\  
 \textbf{Political Scandal} &  \begin{tabular}[c]{@{}c@{}}No scandal \\[2pt] Investigated for unwanted sexual conduct towards staff members \\[2pt] Falsification of credentials on curriculum vitae \\[2pt] Investigated for appropriation of illegal funding \\[2pt] Participated in a violent anti-government protest while underage
 
  \end{tabular} \\ \hline
