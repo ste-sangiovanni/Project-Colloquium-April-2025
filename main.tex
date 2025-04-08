@@ -29,8 +29,8 @@
 \addbibresource{biblio.bib}
 
 \renewcommand*{\nameyeardelim}{\addcomma\space}
-\newcommand{\customcite}[1]{\textcolor{blue}{\parencite{#1}}}
-\newcommand{\customcites}[1]{\textcolor{blue}{\parencites{#1}}}
+\newcommand{\customcite}[1]{\textcolor{blue}{\footnotesize\parencite{#1}}}
+\newcommand{\customcites}[1]{\textcolor{blue}{\footnotesize\parencites{#1}}}
 \AtEveryCite{\renewcommand{\bibsetup}{\nopagenumbers}}
 
 % Customize bibliography format
@@ -108,7 +108,7 @@
     \end{frame}
 
 \begin{frame}{Overview of the PhD Project}
-    \textbf{Valence theory:} Voters are influenced not only by policy positions, but also by concepts on which all voters hold near-identical preferences \customcites{stokes1992valence, clark2009valence} \vspace{0.2cm}
+    \textbf{Valence theory:} voters are influenced not only by policy positions, but also by concepts on which all voters hold near-identical preferences \customcites{stokes1992valence, clark2009valence} \vspace{0.2cm}
         \begin{itemize}
             \item \textbf{Policy-based:} perceived competence on universally valued goals \customcites{groseclose2001model, jacoby2009public, clark2009valence} \vspace{0.2cm}
             \item \textbf{Character-based:} traits like honesty, competence, charisma, and unity \customcites{clark2009valence, adams2001theory}
@@ -143,22 +143,22 @@
 
 
 \begin{frame}{Structure of the Dissertation - 3 Interconnected Papers}
-    \textbf{Political Scandals and Voter Evaluations}  
+    \textbf{Political Scandals and Voter Evaluations}  \vspace{0.2cm}
     \begin{itemize}
-        \item Examines the effects of political scandals on voter perceptions using two experiments:
+        \item Examines the effects of political scandals on voter perceptions using two experiments: \vspace{0.1cm}
         \begin{itemize}
-            \item Conjoint experiment
+            \item Conjoint experiment\vspace{0.1cm}
             \item Audio-based survey experiment
         \end{itemize}
     \end{itemize}
 \vspace{0.3cm}
-    \textbf{Electoral Campaigns and Valence}  
+    \textbf{Electoral Campaigns and Valence}  \vspace{0.2cm}
     \begin{itemize}
         \item Investigates how parties’ valence signaling during campaigns affects polling support
     \end{itemize}
     \vspace{0.3cm}
     
-    \textbf{Economic Performance and Strategic Valence}  
+    \textbf{Economic Performance and Strategic Valence}  \vspace{0.2cm}
     \begin{itemize}
         \item Explores how governing and opposition parties adjust valence strategies in response to economic indicators
     \end{itemize}
@@ -400,10 +400,10 @@ Financial support for low-income families (Left-wing)
         \item \textbf{RQ2:} Does the effect of valence vary when parties shift or moderate their ideological positions?\vspace{0.2cm}
     \end{itemize}
 \vspace{0.3cm}
-    \textbf{Theoretical Expectations:} 
+    \textbf{Theoretical Expectations:} \vspace{0.2cm}
     \begin{itemize}
-        \item Emphasizing valence is associated with gains in polling support\vspace{0.2cm}
-        \item Character-based valence has a stronger effect than policy-based valence\vspace{0.2cm}
+        \item Emphasizing valence is associated with gains in polling support \customcites{adams2011anybody, abney2013valence}\vspace{0.2cm}
+        \item Character-based valence has a stronger effect than policy-based valence and positional statements \customcites{clark2009valence, Lenz2012}\vspace{0.2cm}
         \item The effect of valence is amplified for parties that have moderated their ideological stance since the previous election
     \end{itemize}
 \end{frame}
@@ -426,7 +426,7 @@ Financial support for low-income families (Left-wing)
         \end{itemize} \vspace{0.2cm}
         \item \textbf{Methods:} Fixed-Effect panel regression \vspace{0.2cm}
         \begin{equation*}
-            \Delta Poll_{i,t} = \beta_1 \cdot \text{Valence\_Char}_{i,t} + \beta_2 \cdot \text{Valence\_Policy}_{i,t} + \boldsymbol{\gamma} \cdot \mathbf{X}_{i,t} + \alpha_i + \varepsilon_{i,t}
+            \Delta Poll_{i,t} = \beta_0 + \beta_1 \cdot \text{Valence\_Char}_{i,t} + \beta_2 \cdot \text{Valence\_Policy}_{i,t} + \boldsymbol{\gamma} \cdot \mathbf{X}_{i,t} + \alpha_i + \varepsilon_{i,t}
         \end{equation*}
     \end{itemize}
 \end{frame}
@@ -493,7 +493,7 @@ Financial support for low-income families (Left-wing)
 \end{itemize}   
     \end{frame}
 
-\begin{frame}{Research Design: Data and Methodology}
+\begin{frame}{Research Design}
     \textbf{Data:} \vspace{0.1cm}
     \begin{itemize}
         \item Parliamentary debates: ParlaMint \customcite{erjavec2023parlamint}, ParlSpeech \customcite{rauh2020parlspeech} \vspace{0.1cm}
@@ -503,10 +503,10 @@ Financial support for low-income families (Left-wing)
     
     \textbf{Methodology:} \vspace{0.1cm}
     \begin{itemize}
-        \item Use a \textbf{Natural Language Inference (NLI)} approach to classify debates:\vspace{0.1cm}
+        \item Use a Natural Language Inference (NLI) approach to classify debates:\vspace{0.1cm}
         \begin{itemize}
-            \item \textbf{"Economic-Related" valence traits:} competence in managing the economy, effective governance, and leadership during economic crises \vspace{0.1cm}
-            \item \textbf{Positional issues:} specific policy stances on economic matters \vspace{0.1cm}
+            \item "Economic-Related" valence traits: competence in managing the economy, effective governance, and leadership during economic crises \vspace{0.1cm}
+            \item Positional issues: specific policy stances on economic matters \vspace{0.1cm}
         \end{itemize}
         \item Fine-tune an NLI classifier, such as Political DEBATE \customcite{burnham2024political} \vspace{0.1cm}
         \item For political text classification, smaller fine-tuned LLMs consistently outperform larger zero-shot prompted models \customcite{bucher2024finetunedsmallllmsstill} \vspace{0.1cm}
@@ -516,12 +516,11 @@ Financial support for low-income families (Left-wing)
     \vspace{0.3cm}
 \end{frame}
 
-
 \begin{frame}{Conclusions and Next Steps}
     \textbf{Political Scandals and Voter Evaluations}
     \begin{itemize}
-        \item Complete the pre-registration and get the ethical committee approval
-        \item Validate the emotional tone of political speech (Calm vs. Aggressive) using SpeechBrain \customcite{speechbrain} trained on IEMOCAP
+        \item Reflect on the wording of the attributes, complete the pre-registration
+        \item Validate the tones using SpeechBrain \customcite{speechbrain} trained on IEMOCAP
         \item Compare the advantages of LLM-generated vs. manually written debate scripts to capture natural political discourse
     \end{itemize}
     \vspace{0.2cm}
