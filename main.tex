@@ -117,7 +117,7 @@
 \textbf{Research Focus:} \vspace{0.1cm}
 \begin{itemize}
     \item How political parties strategically use \textbf{valence appeals} to shape voter perceptions and structure party competition across different arenas (e.g., parliamentary debates, electoral campaigns) \vspace{0.2cm}
-    \item How parties navigate the trade-off between \textbf{positional} and \textbf{valence-based} strategies \customcites{stokes1992valence, clark2009valence} \vspace{0.2cm}
+    \item How parties navigate the trade-off between \textbf{positional} and \textbf{valence-based} strategies \vspace{0.2cm}
     \item How \textbf{negative valence shocks}, such as political scandals, shape voters’ evaluations of politicians and parties
 \end{itemize}
 
@@ -143,27 +143,24 @@
 
 
 \begin{frame}{Structure of the Dissertation - 3 Interconnected Papers}
-    \textbf{Paper 1: Electoral Campaigns and Valence}  
-    \begin{itemize}
-        \item Investigates how parties’ valence signaling during campaigns affects polling support
-        \item Key focus: Character-based vs. policy-based valence and their impact on polls
-    \end{itemize}
-    \vspace{0.3cm}
-    
-    \textbf{Paper 2: Economic Performance and Strategic Valence}  
-    \begin{itemize}
-        \item Explores how governing and opposition parties adjust valence strategies in response to economic indicators
-        \item Combines parliamentary debates with macroeconomic data
-    \end{itemize}
-    \vspace{0.3cm}
-    
-    \textbf{Paper 3: Political Scandals and Voter Evaluations}  
+    \textbf{Political Scandals and Voter Evaluations}  
     \begin{itemize}
         \item Examines the effects of political scandals on voter perceptions using two experiments:
         \begin{itemize}
             \item Conjoint experiment
             \item Audio-based survey experiment
         \end{itemize}
+    \end{itemize}
+\vspace{0.3cm}
+    \textbf{Electoral Campaigns and Valence}  
+    \begin{itemize}
+        \item Investigates how parties’ valence signaling during campaigns affects polling support
+    \end{itemize}
+    \vspace{0.3cm}
+    
+    \textbf{Economic Performance and Strategic Valence}  
+    \begin{itemize}
+        \item Explores how governing and opposition parties adjust valence strategies in response to economic indicators
     \end{itemize}
 \end{frame}
 
@@ -312,19 +309,6 @@
 % Average marginal components effect
 
 
-\begin{frame}{Data Analysis Approach}
-    \begin{itemize}
-\item \textbf{AMCE:} The average effect of varying one attributes of a profile on the probability that that profile will be chosen by a respondent \customcite{BansakEtAl2022}\vspace{0.3cm} 
-\item \textbf{Marginal Means:} An alternative estimator that does not rely on reference categories and is gaining preference in recent research \customcite{Casiraghi} \vspace{0.3cm} 
-        \item \textbf{Exploratory Analyses:}  
-        \begin{itemize}
-            \item \textbf{ACIEs:} Examining how the impact of one attribute (e.g. party affiliation) depends on another (e.g. scandal) \vspace{0.2cm}  
-            \item \textbf{Subgroup analyses:} Preference heterogeneity across respondent characteristics \customcite{Leeper_Hobolt_Tilley_2020} \vspace{0.2cm} 
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-
 %%%%%%%%%%%%%%%%%%%%%% Audio Experiment :D 
 
 \begin{frame}{Audio Experiment}
@@ -374,16 +358,16 @@ Financial support for low-income families (Left-wing)
 \begin{frame}{How are we generating the audios?}
 \begin{itemize}
 \item \textbf{OS Text-To-Speech Model:} VITS \customcite{kim2021conditional}, an end-to-end speech synthesis multispeaker model trained on the CSTR-VCTK Corpus \customcite{Veaux2017CSTRVC}%, which includes 44 hours of speech data from 110 English speakers with various accents, reading approximately 400 sentences each. 
-\\ \vspace{0.3cm}
-\item \textbf{Pipeline 1: Pre-written Scripts + TTS}
+\vspace{0.3cm}
+\item \textbf{Pipeline 1: Pre-written Scripts + TTS} \vspace{0.2cm}
 \begin{itemize}
-    \item We manually write a set of debate scripts, covering different policy topics and valence attacks
-    \item A Python script processes the text with the TTS model, converting it into audio while adjusting speaker gender and voice tone
+    \item We manually write a set of debate scripts, covering different policy topics and valence attacks \vspace{0.2cm}
+    \item A Python script processes the text with the TTS model, converting it into audio while adjusting speaker gender and voice tone 
 \end{itemize}
 \vspace{0.3cm}
-\item \textbf{Pipeline 2: LLM-Generated Debates + TTS}
+\item \textbf{Pipeline 2: LLM-Generated Debates + TTS} \vspace{0.2cm}
 \begin{itemize}
-    \item An LLM generates debate scripts based on prompts specifying the policy topic and the scandal
+    \item An LLM generates debate scripts based on prompts specifying the policy topic and the scandal \vspace{0.2cm}
     \item The generated text is fed into the TTS model for audio synthesis
 \end{itemize}
 \vspace{0.3cm}
@@ -394,17 +378,17 @@ Financial support for low-income families (Left-wing)
 \begin{frame}{Example: Pre-written Debate Script}
 \small
 \textbf{Anchorman:} Welcome to today’s debate on \textbf{economic policy.} Senator Williamson, Senator Smith, thank you for being here. \\
-\vspace{0.2cm}
+\vspace{0.3cm}
 \textbf{Senator John Williamson:} Good morning, and thank you for the opportunity to participate.\\
-\vspace{0.2cm}
+\vspace{0.3cm}
 \textbf{Senator Jane Smith:} Good morning, I’m glad to be here.\\
-\vspace{0.2cm}
+\vspace{0.3cm}
 \textbf{Anchorman:} Senator Williamson, let’s start with you. What is your perspective on today’s economic challenges?\\
-\vspace{0.2cm}
+\vspace{0.3cm}
 \textbf{Senator John Williamson:} Our priority must be \textbf{job creation and unemployment reduction.} We’ve worked on policies that aims to reduce unemployment and provide more opportunities for our citizens. Our goal should be to improve living standards and ensure long-term stability.\\
-\vspace{0.2cm}
+\vspace{0.3cm}
 \textbf{Anchorman:} Senator Smith, do you have a response? \\
-\vspace{0.2cm}
+\vspace{0.3cm}
 \textbf{Senator Jane Smith:} Senator Williamson talks about job creation, but how can anyone take his words seriously when he’s been investigated for \textbf{unwanted sexual conduct} towards staff members? This isn’t just a matter of policy—it’s about trust, integrity, and accountability.
 \end{frame}
 
@@ -418,29 +402,29 @@ Financial support for low-income families (Left-wing)
 \vspace{0.3cm}
     \textbf{Theoretical Expectations:} 
     \begin{itemize}
-        \item Emphasizing valence is associated with gains in polling support.\vspace{0.2cm}
-        \item Character-based valence has a stronger effect than policy-based valence.\vspace{0.2cm}
-        \item The effect of valence is amplified for parties that have moderated their ideological stance since the previous election.
+        \item Emphasizing valence is associated with gains in polling support\vspace{0.2cm}
+        \item Character-based valence has a stronger effect than policy-based valence\vspace{0.2cm}
+        \item The effect of valence is amplified for parties that have moderated their ideological stance since the previous election
     \end{itemize}
 \end{frame}
 
 
 \begin{frame}{Research Design: Data and Methodology}
     \begin{itemize}
-        \item \textbf{Valence Data:} Comparative Campaign Dynamics Dataset \customcite{debussomer-topcu2018comparative}, coding of self-promotional statements in newspapers by political parties during campaigns. \vspace{0.2cm}
-        \item \textbf{Polling Data:} Polls dataset \customcite{Jennings2018}, plus country-specific polling data from Wikipedia. \vspace{0.2cm}
-        \item \textbf{Sample:} 9 European countries, 17 elections. \vspace{0.2cm}
+        \item \textbf{Valence Data:} Comparative Campaign Dynamics Dataset \customcite{debussomer-topcu2018comparative}, coding of self-promotional statements in newspapers by political parties during campaigns \vspace{0.2cm}
+        \item \textbf{Polling Data:} Polls dataset \customcite{Jennings2018}, plus country-specific polling data from Wikipedia \vspace{0.2cm}
+        \item \textbf{Sample:} 9 European countries, 17 elections \vspace{0.2cm}
         \item \textbf{Panel Dataset:} 
         \begin{itemize}
-            \item Daily data for each party during the campaign, valence measured by the number of statements made each day. \vspace{0.2cm}
-            \item Polling data computed daily, using the most recent available poll for each day.
+            \item Daily data for each party during the campaign, valence measured by the number of statements made each day \vspace{0.2cm}
+            \item Polling data computed daily, using the most recent available poll for each day
         \end{itemize} \vspace{0.2cm}
         \item \textbf{Main Variables:} 
         \begin{itemize}
-            \item \textbf{DV:} Weekly change in polling support ($\Delta$ Poll). \vspace{0.2cm}
-            \item \textbf{IVs:} Weekly measures: Character-based valence, Policy-based valence, Positional statements.
+            \item \textbf{DV:} Weekly change in polling support ($\Delta$ Poll) \vspace{0.2cm}
+            \item \textbf{IVs:} Weekly measures: Character-based valence, Policy-based valence, Positional statements
         \end{itemize} \vspace{0.2cm}
-        \item \textbf{Methods:} Fixed-Effect panel regression. \vspace{0.2cm}
+        \item \textbf{Methods:} Fixed-Effect panel regression \vspace{0.2cm}
         \begin{equation*}
             \Delta Poll_{i,t} = \beta_1 \cdot \text{Valence\_Char}_{i,t} + \beta_2 \cdot \text{Valence\_Policy}_{i,t} + \boldsymbol{\gamma} \cdot \mathbf{X}_{i,t} + \alpha_i + \varepsilon_{i,t}
         \end{equation*}
@@ -503,17 +487,17 @@ Financial support for low-income families (Left-wing)
     \vspace{0.4cm}
     \textbf{Theoretical Expectations}\vspace{0.1cm}
 \begin{itemize}
-    \item Governing parties emphasize valence traits when economic performance indicators are strong.\vspace{0.1cm}
-    \item Opposition parties highlight positional issues (e.g. redistribution) to challenge the incumbent.\vspace{0.1cm}
-    \item Parties select issue emphasis strategically, based on whether they can claim credit or shift blame.
+    \item Governing parties emphasize valence traits when economic performance indicators are strong\vspace{0.1cm}
+    \item Opposition parties highlight positional issues (e.g. redistribution) to challenge the incumbent\vspace{0.1cm}
+    \item Parties select issue emphasis strategically, based on whether they can claim credit or shift blame
 \end{itemize}   
     \end{frame}
 
 \begin{frame}{Research Design: Data and Methodology}
     \textbf{Data:} \vspace{0.1cm}
     \begin{itemize}
-        \item Parliamentary debates (e.g., ParlaMint). \vspace{0.1cm}
-        \item Economic performance indicators (e.g., GDP growth, unemployment rates). 
+        \item Parliamentary debates: ParlaMint \customcite{erjavec2023parlamint}, ParlSpeech \customcite{rauh2020parlspeech} \vspace{0.1cm}
+        \item Economic performance indicators (e.g., GDP growth, unemployment rates)
     \end{itemize}
     \vspace{0.3cm}
     
@@ -521,33 +505,40 @@ Financial support for low-income families (Left-wing)
     \begin{itemize}
         \item Use a \textbf{Natural Language Inference (NLI)} approach to classify debates:\vspace{0.1cm}
         \begin{itemize}
-            \item \textbf{"Economic-Related" valence traits:} competence in managing the economy, effective governance, and leadership during economic crises. \vspace{0.1cm}
-            \item \textbf{Positional issues:} specific policy stances on economic matters. \vspace{0.1cm}
+            \item \textbf{"Economic-Related" valence traits:} competence in managing the economy, effective governance, and leadership during economic crises \vspace{0.1cm}
+            \item \textbf{Positional issues:} specific policy stances on economic matters \vspace{0.1cm}
         \end{itemize}
-        \item Fine-tune an NLI classifier, such as Political DEBATE \customcite{burnham2024political} to improve accuracy. \vspace{0.1cm}
-        \item Analyze how governing parties emphasize economic valence traits in response to positive economic indicators. \vspace{0.1cm}
-        \item Examine how opposition parties shift focus to positional issues under similar conditions.
+        \item Fine-tune an NLI classifier, such as Political DEBATE \customcite{burnham2024political} \vspace{0.1cm}
+        \item For political text classification, smaller fine-tuned LLMs consistently outperform larger zero-shot prompted models \customcite{bucher2024finetunedsmallllmsstill} \vspace{0.1cm}
+        \item Analyze how governing parties emphasize economic valence traits in response to positive economic indicators \vspace{0.1cm}
+        \item Examine how opposition parties shift focus to positional issues under similar conditions
     \end{itemize}
     \vspace{0.3cm}
 \end{frame}
 
-\begin{frame}{Conclusions and Next Steps}
-\textbf{Conjoint Experiment}
-\begin{itemize}
-    \item Findings will show the relative weight of scandal information compared to party affiliation, policy positions, and positive valence in respondents evaluations \vspace{0.2cm}
-    \item Ensure proper randomization of valence attributes while maintaining realistic candidate profiles 
 
-\end{itemize}
-\vspace{0.2cm}
-\textbf{Audio Experiment}
-\begin{itemize}
-    \item Offering insights into how tone and framing of political scandals related attacks influence candidate perceptions and voter decision-making
+\begin{frame}{Conclusions and Next Steps}
+    \textbf{Political Scandals and Voter Evaluations}
+    \begin{itemize}
+        \item Complete the pre-registration and get the ethical committee approval
+        \item Validate the emotional tone of political speech (Calm vs. Aggressive) using SpeechBrain \customcite{speechbrain} trained on IEMOCAP
+        \item Compare the advantages of LLM-generated vs. manually written debate scripts to capture natural political discourse
+    \end{itemize}
     \vspace{0.2cm}
-    \item Validate the emotional tone of political speech (Calm vs. Aggressive). Potential approach: use SpeechBrain \customcite{speechbrain} trained on IEMOCAP
+    \textbf{Electoral Campaigns and Valence}
+    \begin{itemize}
+        \item Expand polling data coverage for additional elections and countries
+        \item Conduct potential robustness checks to ensure the validity of results (e.g. Autoregressive Models, More controls)
+        \item Test the role of policy moderation/change 
+    \end{itemize}
     \vspace{0.2cm}
-    \item Compare the advantages of LLM-generated vs. manually written debate scripts: which approach better captures natural political discourse while maintaining experimental validity
-\end{itemize}
-\end{frame}
+    \textbf{Economic Performance and Strategic Valence}
+    \begin{itemize}
+        \item Develop hypotheses for the Natural Language Inference (NLI) classifier
+        \item Construct a fine-tuning dataset for economic valence traits and positional issues
+        \item Explore classical topic modeling approaches and LLM-based topic analysis
+    \end{itemize}
+    \end{frame}
 
 \begin{frame}[plain]
 \centering
@@ -631,16 +622,16 @@ Financial support for low-income families (Left-wing)
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c||c|}
 \hline
-\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\  
+\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\ \hline
 \textbf{Gender}                     & \begin{tabular}[c]{@{}c@{}}Male \\[2pt] Female\end{tabular}                                                              \\ \hline
 \textbf{Party Affiliation}          & \begin{tabular}[c]{@{}c@{}}Right-Wing \\[2pt] Left-Wing\end{tabular}                                      \\ \hline
-\textbf{Incumbency Status}          & \begin{tabular}[c]{@{}c@{}}Incumbent \\[2pt] Opposition\end{tabular}                                      \\   
+\textbf{Incumbency Status}          & \begin{tabular}[c]{@{}c@{}}Incumbent \\[2pt] Opposition\end{tabular}                                      \\ \hline
 \textbf{Position on Immigration}    & \begin{tabular}[c]{@{}c@{}}Implement strict border controls and reduce immigration \\[2pt]
 Promote inclusive immigration policies and increase quotas for asylum seekers
 \end{tabular}       \\ \hline
 \textbf{Position on Economic Policies} & \begin{tabular}[c]{@{}c@{}}Advocates for tax reductions, market deregulation and business-friendly policies \\[2pt]
 Supports stronger market regulations, higher corporate taxation and expanded welfare programs
-\end{tabular} \\  
+\end{tabular} \\ \hline
 \textbf{Political Scandal} &  \begin{tabular}[c]{@{}c@{}}No scandal \\[2pt] Investigated for unwanted sexual conduct towards staff members \\[2pt] Falsification of credentials on curriculum vitae \\[2pt] Investigated for corruption \\[2pt] Participated in a violent anti-government protest while underage
 
  \end{tabular} \\ \hline
@@ -651,14 +642,13 @@ Supports stronger market regulations, higher corporate taxation and expanded wel
 \end{table}
 \end{frame}
 
-
 \begin{frame}{Appendix 3.2 - Valence vs Valence}
     \begin{table}[!h]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c||c|}
 \hline
-\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\  
+\textbf{Attributes}                 & \textbf{Levels}                                                                                                    \\ \hline
 \textbf{Political Scandal} &  \begin{tabular}[c]{@{}c@{}}No scandal \\[2pt] Investigated for unwanted sexual conduct towards staff members \\[2pt] Falsification of credentials on curriculum vitae \\[2pt] Investigated for appropriation of illegal funding \\[2pt] Participated in a violent anti-government protest while underage
 
  \end{tabular} \\ \hline
@@ -673,12 +663,24 @@ Supports stronger market regulations, higher corporate taxation and expanded wel
 \end{table}
 \end{frame}
 
-\begin{frame}{Appendix 4 - Literature Gaps in Political Scandal Research}
+\begin{frame}{Appendix 4.1 - Literature Gaps in Political Scandal Research}
     \begin{itemize}
         \item Limited focus on types of scandals beyond corruption, reducing generalizability \customcite{kumlin2012scandal} \vspace{0.3cm}
         \item Insufficient research on voters' reactions to different types of scandals \vspace{0.3cm}
         \item Lack of systematic comparisons across various contexts (moral values are country dependent), scandal types and valence informations \customcite{kumlin2012scandal} \vspace{0.3cm}
         \item Effects of different scandal types on electoral behavior in polarized contexts remain poorly understood \customcites{puglisi2011, darr2019collision, Rottinghaus_2023} \vspace{0.3cm} 
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Appendix 4.2 - Experiment Data Analysis Approach}
+    \begin{itemize}
+\item \textbf{AMCE:} The average effect of varying one attributes of a profile on the probability that that profile will be chosen by a respondent \customcite{BansakEtAl2022}\vspace{0.3cm} 
+\item \textbf{Marginal Means:} An alternative estimator that does not rely on reference categories and is gaining preference in recent research \customcite{Casiraghi} \vspace{0.3cm} 
+        \item \textbf{Exploratory Analyses:}  
+        \begin{itemize}
+            \item \textbf{ACIEs:} Examining how the impact of one attribute (e.g. party affiliation) depends on another (e.g. scandal) \vspace{0.2cm}  
+            \item \textbf{Subgroup analyses:} Preference heterogeneity across respondent characteristics \customcite{Leeper_Hobolt_Tilley_2020} \vspace{0.2cm} 
+        \end{itemize}
     \end{itemize}
 \end{frame}
 
