@@ -55,14 +55,18 @@
 \setbeamertemplate{footline}{
     \leavevmode%
     \hbox{%
-      \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \begin{beamercolorbox}[wd=.45\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
         \usebeamerfont{author in head/foot}\shortauthor
       \end{beamercolorbox}%
-      \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \begin{beamercolorbox}[wd=.45\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
         \usebeamerfont{title in head/foot}\shorttitle
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}%
+        {\fontsize{6}{7.2}\selectfont \insertframenumber{}/18}
       \end{beamercolorbox}}%
     \vskip0pt
-  }
+}
+
  
  % Remove navigation symbols
  \setbeamertemplate{navigation symbols}{}
@@ -95,6 +99,7 @@
 \end{frame}
 
 \begin{frame}{Structure of the Presentation}
+    \setcounter{framenumber}{1}
     \begin{enumerate}
         \item Introduction and Theoretical Background \vspace{0.4cm}
         \item Experimental Designs \vspace{0.4cm}
@@ -118,7 +123,7 @@
 \begin{itemize}
     \item How political parties strategically use \textbf{valence appeals} to shape voter perceptions and structure party competition across different arenas (e.g., parliamentary debates, electoral campaigns) \vspace{0.2cm}
     \item How parties navigate the trade-off between \textbf{positional} and \textbf{valence-based} strategies \vspace{0.2cm}
-    \item How \textbf{negative valence shocks}, such as political scandals, shape voters’ evaluations of politicians and parties
+    \item How \textbf{negative valence shocks}, such as political scandals or negative news about the state of the economy, shape voters’ evaluations of politicians and parties
 \end{itemize}
 
 \end{frame}
@@ -154,7 +159,7 @@
 \vspace{0.3cm}
     \textbf{Electoral Campaigns and Valence}  \vspace{0.2cm}
     \begin{itemize}
-        \item Investigates how parties’ valence signaling during campaigns affects polling support
+        \item Investigates how parties’ valence statements during campaigns affects polling support
     \end{itemize}
     \vspace{0.3cm}
     
@@ -252,7 +257,7 @@
         \item Present \textbf{detailed-rich fictional scenario} where two candidates compete in an actual election \customcite{Galasso} \vspace{0.3cm}
         \item Participants will express a \textbf{preference between two politicians} with differing characteristics across various attributes \vspace{0.3cm}
         \item Each respondent completes \textbf{3 tasks}, each time choosing between \textbf{2 candidates} and indicating their preferred choice \vspace{0.3cm}
-        \item \textbf{Sample:} 2,000 respondents per country (USA, UK, Italy) recruited via a survey company \vspace{0.3cm}
+        \item \textbf{Sample:} 2,000 respondents per country (USA, UK) recruited via a survey company \vspace{0.3cm}
         \item \textbf{Power Analysis:} Our sample size allows us to detect a 0.04 effect for an attribute with 5 levels with 0.84 statistical power \customcite{lukac_stefanelli_2020}
     \end{itemize}
 \end{frame}
@@ -321,7 +326,7 @@
 \item \textbf{Sample:} 2,000 respondents per country (USA, UK) recruited via a survey
 company \vspace{0.3cm}
 
-\item Participants will be randomly assigned to listen to three debates or read the text version. At the end of the experiment, respondents will indicate their preferred candidate \vspace{0.3cm}
+\item Participants will be randomly assigned to listen to one debate or read the text version. At the end of the experiment, respondents will indicate their preferred candidate \vspace{0.3cm}
 %This design tests the impact of hearing the debate versus reading the text on participants' candidate preference. 
 \item \textbf{Debate Structure (Approx. 2 minutes):} \vspace{0.2cm}
 \begin{itemize}
@@ -402,12 +407,11 @@ Financial support for low-income families (Left-wing)
 \vspace{0.3cm}
     \textbf{Theoretical Expectations:} \vspace{0.2cm}
     \begin{itemize}
-        \item Emphasizing valence is associated with gains in polling support \customcites{adams2011anybody, abney2013valence}\vspace{0.2cm}
-        \item Character-based valence has a stronger effect than policy-based valence and positional statements \customcites{clark2009valence, Lenz2012}\vspace{0.2cm}
-        \item The effect of valence is amplified for parties that have moderated their ideological stance since the previous election
+        \item \textbf{H1:} Emphasizing valence is associated with gains in polling support \customcites{adams2011anybody, abney2013valence}\vspace{0.2cm}
+        \item \textbf{H2:} Character-based valence has a stronger effect than policy-based valence and positional statements \customcites{clark2009valence, Lenz2012}\vspace{0.2cm}
+        \item \textbf{H3:} The effect of valence is amplified for parties that have moderated their ideological stance since the previous election
     \end{itemize}
 \end{frame}
-
 
 \begin{frame}{Research Design: Data and Methodology}
     \begin{itemize}
@@ -476,20 +480,20 @@ Financial support for low-income families (Left-wing)
     \end{multicols}
 \end{frame}
 
-
 %%% PAPER 2
 \begin{frame}{Economic Performance Indicators and Strategic Valence Choices}
     \textbf{Main Research Questions} \vspace{0.1cm}
     \begin{itemize}
-        \item \textbf{RQ1:} How do governing parties adjust their emphasis on valence traits in response to positive economic indicators?\vspace{0.1cm}
-        \item \textbf{RQ2:} How do opposition parties adjust their communication strategies around economic issues in response to positive economic indicators?
+        \item \textbf{RQ1:} How do governing parties adjust their emphasis on valence traits in response to economic indicators?\vspace{0.1cm}
+        \item \textbf{RQ2:} How do opposition parties adjust their communication strategies around economic issues in response to economic indicators?
     \end{itemize}
     \vspace{0.4cm}
     \textbf{Theoretical Expectations}\vspace{0.1cm}
 \begin{itemize}
-    \item Governing parties emphasize valence traits when economic performance indicators are strong\vspace{0.1cm}
-    \item Opposition parties highlight positional issues (e.g. redistribution) to challenge the incumbent\vspace{0.1cm}
-    \item Parties select issue emphasis strategically, based on whether they can claim credit or shift blame
+    \item \textbf{H1:} Governing parties emphasize valence traits when economic performance indicators are positive\vspace{0.1cm}
+    \item \textbf{H2:} Opposition parties emphasize valence traits when economic performance indicators are negative\vspace{0.1cm}
+    \item \textbf{H3:} Opposition parties highlight positional issues (e.g. redistribution) to challenge the incumbent\vspace{0.1cm}
+    \item \textbf{H4:} Parties select issue emphasis strategically, based on whether they can claim credit or shift blame
 \end{itemize}   
     \end{frame}
 
@@ -497,7 +501,7 @@ Financial support for low-income families (Left-wing)
     \textbf{Data:} \vspace{0.1cm}
     \begin{itemize}
         \item Parliamentary debates: ParlaMint \customcite{erjavec2023parlamint}, ParlSpeech \customcite{rauh2020parlspeech} \vspace{0.1cm}
-        \item Economic performance indicators (e.g., GDP growth, unemployment rates)
+        \item Economic performance indicators (e.g. GDP growth, unemployment rates)
     \end{itemize}
     \vspace{0.3cm}
     
@@ -535,7 +539,7 @@ Financial support for low-income families (Left-wing)
     \begin{itemize}
         \item Develop hypotheses for the Natural Language Inference (NLI) classifier
         \item Construct a fine-tuning dataset for economic valence traits and positional issues
-        \item Explore classical topic modeling approaches and LLM-based topic analysis
+        \item Explore classical topic modeling approaches and LLM-based topic classification
     \end{itemize}
     \end{frame}
 
