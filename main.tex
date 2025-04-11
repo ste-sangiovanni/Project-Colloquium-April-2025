@@ -22,7 +22,7 @@
 \hypersetup{hidelinks}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
-\usepackage{fontawesome5} % For social media icons
+\usepackage{fontawesome5} 
 
 % Bibliography
 \usepackage[style=authoryear]{biblatex}
@@ -67,8 +67,6 @@
     \vskip0pt
 }
 
- 
- % Remove navigation symbols
  \setbeamertemplate{navigation symbols}{}
 
 % Short Title and Author for Footer
@@ -98,6 +96,7 @@
     \titlepage
 \end{frame}
 
+\begin{section}{Structure of the Presentation}
 \begin{frame}{Structure of the Presentation}
     \setcounter{framenumber}{1}
     \begin{enumerate}
@@ -107,7 +106,11 @@
             \item Conjoint Experiment \vspace{0.2cm}
             \item Audio-Based Survey Experiment
         \end{itemize}\vspace{0.4cm}
-        \item Overview of the Other Papers \vspace{0.4cm}
+        \item Overview of Two other Papers \vspace{0.4cm}
+        \begin{itemize}
+        \item The Impact on Valence on Polling Support during Electoral Campaigns \vspace{0.2cm}
+        \item Economic Performance Indicators and Strategic Valence Choices \vspace{0.2cm}
+        \end{itemize}
         \item Conclusions and Next Steps \vspace{0.4cm}
     \end{enumerate}
     \end{frame}
@@ -125,27 +128,7 @@
     \item How parties navigate the trade-off between \textbf{positional} and \textbf{valence-based} strategies \vspace{0.2cm}
     \item How \textbf{negative valence shocks}, such as political scandals or negative news about the state of the economy, shape voters’ evaluations of politicians and parties
 \end{itemize}
-
 \end{frame}
-
-% \begin{frame}{Introduction and Theoretical Background}
-%     \begin{itemize}
-%         \item \textbf{Valence theory:} Voters are influenced not only by policy positions, but also by concepts on which all voters hold near-identical preferences \customcites{stokes1992valence, clark2009valence} \vspace{0.2cm}
-%         \begin{itemize}
-%             \item \textbf{Policy-based:} perceived competence on universally valued goals \customcites{groseclose2001model, jacoby2009public, clark2009valence} \vspace{0.2cm}
-%             \item \textbf{Character-based:} traits like honesty, competence, charisma, and unity \customcites{clark2009valence, adams2001theory}
-%         \end{itemize}
-%         \vspace{0.4cm}
-        
-%         \item \textbf{Research Focus:} \vspace{0.1cm}
-%         \begin{itemize}
-%             \item How parties strategically use valence appeals to shape voter perceptions and structure party competition in different contexts (parliamentary debates, electoral campaign) \vspace{0.2cm}
-%             \item How they navigate the trade-off between \textbf{positional} and \textbf{valence-based} appeals \customcites{stokes1992valence, clark2009valence}\vspace{0.2cm}
-%             \item How \textbf{negative valence shocks}, such as political scandals, affect voter perceptions of politicians
-%         \end{itemize}
-%     \end{itemize}
-% \end{frame}
-
 
 \begin{frame}{Structure of the Dissertation - 3 Interconnected Papers}
     \textbf{Political Scandals and Voter Evaluations}  \vspace{0.2cm}
@@ -168,9 +151,9 @@
         \item Explores how governing and opposition parties adjust valence strategies in response to economic indicators
     \end{itemize}
 \end{frame}
+\end{section}
 
-%The second paper examines the effect of positive economic indicators on valence emphasis, investigating how governing parties leverage favorable economic performance to enhance their competence and leadership image, while opposition parties may shift focus to positional economic issues, such as inequality and redistribution.
-
+\begin{section} {Political Scandals and Voter Evaluations}
 \begin{frame} %Trump in 2016
     \begin{figure}
         \centering
@@ -250,7 +233,7 @@
 \end{frame}
 
 %%%%%%%%%%%%% Conjoint Experiment
-
+\begin{subsection}{Conjoint Experiment}
 \begin{frame}{The Conjoint Experiment}
     \begin{itemize}
         %\item Randomized conjoint design (with constrained randomization for valence attributes) \customcite{hainmueller2014} \vspace{0.2cm}
@@ -261,24 +244,6 @@
         \item \textbf{Power Analysis:} Our sample size allows us to detect a 0.04 effect for an attribute with 5 levels with 0.84 statistical power \customcite{lukac_stefanelli_2020}
     \end{itemize}
 \end{frame}
-
-
-%add several elements to provide a detailed picture of the politician, including personal background info.. maybe one scandal matters more (or less) when linked with some individual traits
-
-% \begin{frame}{Experimental Design: Attributes and Levels}
-%     \begin{itemize}
-%         \item Candidate's traits: Gender, Party Affiliation \vspace{0.3cm}
-%         \item Include real and relevant policy issues as attributes to immerse participants in a real-world context \customcite{morton2011electoral} \vspace{0.2cm}
-% \begin{itemize}
-%     \item e.g. Immigration, Green policies, Education, Taxation, EU integration \vspace{0.3cm}
-% \end{itemize}
-%         \item Focus on Financial and Personal scandals 
-%         \customcite{Rottinghaus_2023} \vspace{0.3cm}
-%         \item Use neutral categories for better interpretation of AMCEs \customcite{BansakEtAl2022} \vspace{0.3cm}
-% % average marginal component effects
-% \item Present candidate profiles in a "short bio" format for clarity and realism
-%     \end{itemize}
-% \end{frame}
 
 \begin{frame}{Experimental Design: Profile Attributes}
 \begin{itemize}
@@ -300,22 +265,9 @@
 }
 \end{table}
 \end{frame}
-
-
-
-% we will use the Average Marginal Component Effect (AMCE; Hainmueller et al., 2014), which is the oldest and most used estimator for conjoint experiments. Yet, recent criticisms of this estimator are leading scholars to prefer marginal means (MM; see Baldassarri & De Jong, 2023; Casiraghi et al., 2023) which do not express the effects in terms of a reference category. Conveniently, both these estimators and subsequent visualizations have been implemented in the R package cjregg (Leeper, 2018). 
-
-% Exploratory analyses regarding the interaction between profile attributes (ACIEs: Average Component Interaction Effects) and between attributes of the respondents and the profiles (subgroup analyzes) will additionally be run.
-
-%\item  the degree to which a given value of a conjoint profile feature increases or decreases respondents’ support for the overall profile relative to a baseline, averaging across all respondents and all other profile features. 
- 
-% without going too much into details
-% Average component interaction effect
-% Average marginal components effect
-
-
+\end{subsection}
 %%%%%%%%%%%%%%%%%%%%%% Audio Experiment :D 
-
+\begin{subsection}{Audio Experiment}
 \begin{frame}{Audio Experiment}
 \begin{itemize}
 
@@ -396,8 +348,10 @@ Financial support for low-income families (Left-wing)
 \vspace{0.3cm}
 \textbf{Senator Jane Smith:} Senator Williamson talks about job creation, but how can anyone take his words seriously when he’s been investigated for \textbf{unwanted sexual conduct} towards staff members? This isn’t just a matter of policy—it’s about trust, integrity, and accountability.
 \end{frame}
-
+\end{subsection}
+\end{section}
 %%% PAPER 1
+\begin{section}{The Impact of Valence on Polling Support during Electoral Campaigns}
 \begin{frame}{The Impact of Valence on Polling Support during Electoral Campaigns}
     \textbf{Main Research Questions}     \vspace{0.2cm}
     \begin{itemize}
@@ -434,17 +388,6 @@ Financial support for low-income families (Left-wing)
         \end{equation*}
     \end{itemize}
 \end{frame}
-
-%The dependent variable captures the change in polling support for a party from one week to the next. This is calculated as the difference between the polling average of a given week and the polling average from the previous week.
-
-% \begin{frame}
-%     \begin{equation*}
-%         \Delta Poll_{i,t} = \beta_1 \cdot \text{Valence Type 1}_{i,t} + \beta_2 \cdot \text{Valence Type 2}_{i,t} + \beta_3 \cdot \text{Valence Type 3}_{i,t} + \boldsymbol{\gamma} \cdot \mathbf{X}_{i,t} + \alpha_i + \varepsilon_{i,t}
-%     \end{equation*}
-%     \begin{equation*}
-%         \Delta Poll_{i,t} = \beta_1 \cdot \text{Valence}_{i,t} + \beta_2 \cdot \text{Moderation}_{i,t} + \beta_3 \cdot (\text{Valence}_{i,t} \times \text{Moderation}_{i,t}) + \boldsymbol{\gamma} \cdot \mathbf{X}_{i,t} + \alpha_i + \varepsilon_{i,t}
-%     \end{equation*}
-% \end{frame}
 
 \begin{frame}{Preliminary Results - H1 and H2}
     \begin{multicols}{2}
@@ -515,8 +458,10 @@ Observations & 861 \\
 \end{table}
     \end{multicols}
 \end{frame}
+\end{section}
 
 %%% PAPER 2
+\begin{section}{Economic Performance Indicators and Strategic Valence}
 \begin{frame}{Economic Performance Indicators and Strategic Valence Choices}
     \textbf{Main Research Questions} \vspace{0.1cm}
     \begin{itemize}
@@ -555,7 +500,8 @@ Observations & 861 \\
     \end{itemize}
     \vspace{0.3cm}
 \end{frame}
-
+\end{section}
+\begin{section}{Conclusions and Next Steps}
 \begin{frame}{Conclusions and Next Steps}
     \textbf{Political Scandals and Voter Evaluations}
     \begin{itemize}
@@ -578,6 +524,7 @@ Observations & 861 \\
         \item Explore classical topic modeling approaches and LLM-based topic classification
     \end{itemize}
     \end{frame}
+\end{section}
 
 \begin{frame}[plain]
 \centering
@@ -585,7 +532,6 @@ Observations & 861 \\
 \textbf{\large Thank You for Your Attention!} \\ [0.2cm] 
 \texttt{stefano.sangiovanni@unimi.it} \\[3cm]
 
-% Social Media Links with Icons
 \faGithub\ \href{https://github.com/ste-sangiovanni}{ste-sangiovanni} \\[0.1cm]
 \faTwitter\ @stesangio \\ 
 \includegraphics[width=0.03\textwidth]{images/Bluesky_logo_(black).svg.png} @stesangio.bsky.social
@@ -613,31 +559,6 @@ Observations & 861 \\
         \label{fig:appendix2}
     \end{figure}    
 \end{frame}
-
-% \begin{frame}{Appendix 2.1 - Main Theoretical Expectations - Conjoint Experiment}
-% \begin{itemize}
-%     \item \textbf{H1a:} Respondents will prefer candidates with no scandals over those with scandals, regardless of other candidate attributes. \vspace{0.2cm}
-%     \item \textbf{H1b:} Financial scandals will have a stronger negative impact on respondent preferences than personal scandals. \vspace{0.2cm}
-%     \item \textbf{H1c:} Positive valence will mitigate the negative impact of scandals on respondent preferences, with higher positive valence reducing the severity of both financial and personal scandals. \vspace{0.2cm}
-%     \item \textbf{H1d:} Respondents will be more forgiving of candidates with the same party affiliation when the candidate has a scandal. \vspace{0.2cm}
-%     \item \textbf{H1e:} Respondents will prefer candidates whose policy positions align more closely with their own, even if the candidate has a scandal. \vspace{0.2cm}
-% \end{itemize}
-% \end{frame}
-
-% \begin{frame}{Appendix 2.2 - Main Theoretical Expectations - Conjoint Experiment}
-% \textbf{Gender and Standards of Evaluation:}
-% \begin{itemize}
-%     \item \textbf{H2a:} Female candidates will be held to higher standards regarding scandals than male candidates, with respondents showing a stronger negative response to scandals involving female candidates. \vspace{0.2cm}
-%     \item \textbf{H2b:} Female candidates with scandals will suffer a greater decline in respondent support compared to male candidates with similar scandals. \vspace{0.2cm}
-% \end{itemize}
-
-% \textbf{Policy vs. Scandal Mitigation:}
-% \begin{itemize}
-%     \item \textbf{H3a:} A candidate’s policy position will be more influential than their scandal history when respondents share the same political alignment as the candidate. \vspace{0.2cm}
-%     \item \textbf{H3b:} The negative impact of a scandal will be diminished if the candidate’s policy position aligns closely with the respondent's preferences, particularly for co-partisan candidates. \vspace{0.2cm}
-% \end{itemize}
-% \end{frame}
-
 
 \begin{frame}{Appendix 2.1 - Prompt Example}
         \begin{figure}
@@ -712,6 +633,12 @@ Supports stronger market regulations, higher corporate taxation and expanded wel
 \end{frame}
 
 \begin{frame}{Appendix 4.2 - Experiment Data Analysis Approach}
+ % we will use the Average Marginal Component Effect (AMCE; Hainmueller et al., 2014), which is the oldest and most used estimator for conjoint experiments. Yet, recent criticisms of this estimator are leading scholars to prefer marginal means (MM; see Baldassarri & De Jong, 2023; Casiraghi et al., 2023) which do not express the effects in terms of a reference category. Conveniently, both these estimators and subsequent visualizations have been implemented in the R package cjregg (Leeper, 2018). 
+% Exploratory analyses regarding the interaction between profile attributes (ACIEs: Average Component Interaction Effects) and between attributes of the respondents and the profiles (subgroup analyzes) will additionally be run.
+%\item  the degree to which a given value of a conjoint profile feature increases or decreases respondents’ support for the overall profile relative to a baseline, averaging across all respondents and all other profile features. 
+% without going too much into details
+% Average component interaction effect
+% Average marginal components effect
     \begin{itemize}
 \item \textbf{AMCE:} The average effect of varying one attributes of a profile on the probability that that profile will be chosen by a respondent \customcite{BansakEtAl2022}\vspace{0.3cm} 
 \item \textbf{Marginal Means:} An alternative estimator that does not rely on reference categories and is gaining preference in recent research \customcite{Casiraghi} \vspace{0.3cm} 
