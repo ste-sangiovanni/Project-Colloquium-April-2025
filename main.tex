@@ -235,7 +235,7 @@
 \begin{frame}{Research Design: Two Complementary Experiments}
 
 \begin{block}{Main Research Question}  
-\centering How does different types of \textbf{political scandals} shape voter evaluations of political candidates? 
+\centering How do different types of \textbf{political scandals} shape voter evaluations of political candidates? 
 \end{block}
 \vspace{0.3cm}
 
@@ -457,18 +457,18 @@ Financial support for low-income families (Left-wing)
 \hline \\[-1.8ex]
  & \textit{$\Delta$ Poll Weekly} \\ 
 \hline \\[-1.8ex] 
-Character Valence & 0.159 \\ 
+Character Valence & 0.371$^{*}$ \\ 
+ & (0.148) \\ 
+Moderation & $-$0.191 \\ 
+ & (0.117) \\ 
+Policy Valence & $-$0.509 \\ 
  & (0.268) \\ 
-Moderation & $-$0.353 \\ 
- & (0.187) \\ 
-Policy Valence & $-$0.566$^{**}$ \\ 
- & (0.212) \\ 
-Positional & 0.118 \\ 
- & (0.072) \\ 
-Character Valence × Moderation & 0.765$^{*}$ \\ 
- & (0.314) \\ 
+Positional & 0.051 \\ 
+ & (0.078) \\ 
+Character Valence × Moderation & 0.659$^{*}$ \\ 
+ & (0.258) \\ 
 \hline \\[-1.8ex] 
-Observations & 861 \\
+Observations & 1,505 \\
 \hline
 \hline \\[-1.8ex]
 \multicolumn{2}{l}{\footnotesize  \textit{Note:} Robust standard errors clustered at the party level.} \\
@@ -476,7 +476,7 @@ Observations & 861 \\
 \end{tabular}%
 }
 \end{table}
-    \end{multicols}
+\end{multicols}
 \end{frame}
 \end{section}
 
@@ -540,8 +540,8 @@ Observations & 861 \\
     \textbf{Economic Performance and Strategic Valence}
     \begin{itemize}
         \item Develop hypotheses for the Natural Language Inference (NLI) classifier
-        \item Construct a fine-tuning dataset for economic valence traits and positional issues
-        \item Explore classical topic modeling approaches and LLM-based topic classification
+        \item Construct a dataset for fine-tuning on economic valence traits and positional issues
+        \item Explore classical topic modeling approaches, LLM-based topic classification or LoRA adapters
     \end{itemize}
     \end{frame}
 \end{section}
