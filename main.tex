@@ -23,6 +23,7 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \usepackage{fontawesome5} 
+
  
 % Bibliography
 \usepackage[style=authoryear]{biblatex}
@@ -73,27 +74,47 @@
 \newcommand{\shorttitle}{PhD Project Colloquium}
 \newcommand{\shortauthor}{Stefano Sangiovanni}
 
-%% Title Page
-\date{\footnotesize NASP-POLS PhD Project Colloquium \\ April 22, 2025}
-
-\title{\textbf{The Strategic Balance Between Positional and \\ Valence Issues in Party Competition}}
-
-\author{
-    \large\textbf{Stefano Sangiovanni} \\[0.3cm]
-     Supervisors: Andrea Ceron\textsuperscript{1}, Giovanna M. Invernizzi\textsuperscript{2}
-}
-
-\institute{
-    \footnotesize
-    \textsuperscript{1} Department of Social and Political Sciences, University of Milan \\
-    \textsuperscript{2} Department of Social and Political Sciences, Bocconi University
-}
-
 \begin{document}
 
-\begin{frame}[plain]
-    \titlepage
+\begin{frame}[plain]       
+       
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=north west,xshift=0.5cm,yshift=-0.5cm] at (current page.north west) 
+            {\includegraphics[width=3cm]{images/nasp_logo.jpg}};
+        \node[anchor=north east,xshift=-0.5cm,yshift=0.03cm] at (current page.north east) 
+            {\includegraphics[width=3.3cm]{images/logo_unimi.jpg}};
+    \end{tikzpicture}
+
+    \vspace{1.6cm} % Adjust spacing to accommodate the images
+    \centering
+    \LARGE\textbf{The Strategic Balance Between Positional \\ and Valence Issues in Party Competition}\par
+    
+    \vspace{0.6cm}
+    {\usebeamerfont{subtitle}\large NASP-POLS PhD Project Colloquium}
+    \vspace{0.2cm}
+    {\small April 22, 2025}
+    
+    \vspace{0.6cm}
+    \textbf{\large Stefano Sangiovanni}
+    
+    \vspace{0.6cm}
+    \begin{minipage}{0.8\textwidth}
+    \centering
+    \small
+    Supervisors: Andrea Ceron\textsuperscript{1} \& Giovanna M. Invernizzi\textsuperscript{2} \\
+    Discussant: Paride Carrara\textsuperscript{3}
+    \end{minipage}
+    
+    \vspace{0.6cm}
+    \begin{minipage}{0.8\textwidth}
+    \centering
+    \footnotesize
+    \textsuperscript{1}University of Milan \hspace{0.7cm} 
+    \textsuperscript{2}Bocconi University \hspace{0.7cm} 
+    \textsuperscript{3}University of Bologna
+    \end{minipage}          
 \end{frame}
+
 
 \begin{section}{Structure of the Presentation}
 \begin{frame}{Structure of the Presentation}
@@ -425,7 +446,7 @@ Financial support for low-income families (Left-wing)
     \begin{multicols}{2}
         \begin{figure}
             \centering
-            \includegraphics[width=0.8\linewidth]{images/poll_moderation.png}
+            \includegraphics[width=0.9\linewidth]{images/poll_moderation.png}
             \label{fig:me_moderation}
         \end{figure}
         
@@ -468,7 +489,7 @@ Observations & 861 \\
         \item \textbf{RQ2:} How do opposition parties adjust their communication strategies around economic issues in response to economic indicators?
     \end{itemize}
     \vspace{0.4cm}
-    \textbf{Theoretical Expectations} \customcite{Greene2015}\vspace{0.1cm}
+    \textbf{Theoretical Expectations} \customcites{Hellwig2012, Green2012, Greene2015}\vspace{0.1cm}
 \begin{itemize}
     \item \textbf{H1:} Governing parties emphasize valence traits when economic performance indicators are positive\vspace{0.1cm}
     \item \textbf{H2:} Opposition parties emphasize valence traits when economic performance indicators are negative\vspace{0.1cm}
@@ -480,7 +501,7 @@ Observations & 861 \\
 \begin{frame}{Research Design}
     \textbf{Data:} \vspace{0.1cm}
     \begin{itemize}
-        \item Parliamentary debates: ParlaMint \customcite{erjavec2023parlamint}, ParlSpeech \customcite{rauh2020parlspeech} \vspace{0.1cm}
+        \item Parliamentary debates: ParlaMint \customcite{erjavec2023parlamint}, ParlSpeech \customcite{rauh2020parlspeech}, ParlLawSpeech \customcite{Schwalbach2025} \vspace{0.1cm}
         \item Economic performance indicators (e.g. GDP growth, unemployment rates)
     \end{itemize}
     \vspace{0.3cm}
