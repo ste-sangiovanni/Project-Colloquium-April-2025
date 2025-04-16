@@ -23,6 +23,9 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \usepackage{fontawesome5} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{colortbl}
 
  
 % Bibliography
@@ -670,7 +673,36 @@ Supports stronger market regulations, higher corporate taxation and expanded wel
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Appendix 5 - Valence and Polls Dataset example}
+\begin{frame}{Appendix 5.1 - Countries, Elections, Parties}
+    \begin{table}[!htbp]
+        \centering
+        \resizebox{\linewidth}{!}{
+        \begin{tabular}{lrlr}
+        \toprule
+        Country & Election Year & Party List & Days\\
+        \midrule
+        \cellcolor{gray!10}{Czech Republic} & \cellcolor{gray!10}{2010} & \cellcolor{gray!10}{KDU+CSL, ODS, KSCM, CSSD, VV, TOP 09} & \cellcolor{gray!10}{14}\\
+        Czech Republic & 2013 & ANO 2011, KDU+CSL, ODS, KSCM, CSSD, Dawn, TOP 09 & 8\\
+        \cellcolor{gray!10}{Denmark} & \cellcolor{gray!10}{2011} & \cellcolor{gray!10}{DF, RV, EL, LA, A, SF, V} & \cellcolor{gray!10}{55}\\
+        Germany & 2009 & Grüne, CDU/CSU, Linke, FDP, SPD & 18\\
+        \cellcolor{gray!10}{Germany} & \cellcolor{gray!10}{2013} & \cellcolor{gray!10}{AfD, Grüne, CDU/CSU, Linke, FDP, SPD} & \cellcolor{gray!10}{18}\\
+        Hungary & 2010 & Fidesz, KDNP, Jobbik, MSZP & 15\\
+        \cellcolor{gray!10}{Netherlands} & \cellcolor{gray!10}{2012} & \cellcolor{gray!10}{CDA, D66, PvdA, PVV, SP, VVD} & \cellcolor{gray!10}{18}\\
+        Poland & 2007 & PO, PiS, LPR, LiD, PSL, SRP & 15\\
+        \cellcolor{gray!10}{Poland} & \cellcolor{gray!10}{2011} & \cellcolor{gray!10}{PO, PiS, LiD, RP, PJN, PSL} & \cellcolor{gray!10}{31}\\
+        Spain & 2008 & CiU, PNV, ERC, IU, PP, PSOE, UPyD & 17\\
+        \cellcolor{gray!10}{Sweden} & \cellcolor{gray!10}{2010} & \cellcolor{gray!10}{C, KD, MP, V, FP, M, RGA, S, SD} & \cellcolor{gray!10}{23}\\
+        Sweden & 2014 & C, KD, FI, MP, V, FP, M, RGA, S, SD & 30\\
+        \cellcolor{gray!10}{United Kingdom} & \cellcolor{gray!10}{2005} & \cellcolor{gray!10}{Con, Lab, LibDem} & \cellcolor{gray!10}{18}\\
+        United Kingdom & 2010 & Con, Lab, LibDem & 18\\
+        \cellcolor{gray!10}{United Kingdom} & \cellcolor{gray!10}{2015} & \cellcolor{gray!10}{Con, Lab, LibDem} & \cellcolor{gray!10}{18}\\
+        \bottomrule
+        \end{tabular}}
+        \end{table}
+\end{frame}
+
+
+\begin{frame}{Appendix 5.2 - Valence and Polls Dataset example}
     \begin{table}[!htbp] \centering 
         \caption{Salection of Valence/Polls Dataset} 
         \label{tab:uk_election_preview} 
@@ -692,7 +724,7 @@ Supports stronger market regulations, higher corporate taxation and expanded wel
       \end{table} 
 \end{frame}
 
-\begin{frame}{Appendix 5 - Valence and Polls}
+\begin{frame}{Appendix 5.3 - Valence and Polls}
     \begin{figure}
         \centering
         \includegraphics[width=0.4\textwidth]{images/me_moderation.png}
